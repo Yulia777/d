@@ -301,11 +301,7 @@ function Head($p1) {
 echo '<!DOCTYPE html>
 <html><head><meta charset="utf-8" />
 <title>'.$p1.'</title>
-<meta name="yandex-verification" content="64b06415731b6131" />
 <link href="/resource/style.css" rel="stylesheet">
-<link rel="icon" href="/resource/img/favicon.ico" type="image/x-icon">
-<script src="https://mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
-<script type="text/javascript">try{var yaCounter37654675 = new Ya.Metrika({id:37654675});}catch(e){}</script>
 </head>';
 }
 
@@ -364,7 +360,7 @@ echo '<form method="POST" action="/search/'.$Page.'"><input type="text" name="te
 }
 
 function AdminMenu () {
-echo '<div class="MenuHead"><a href="/admin"><div class="Menu">Главная</div></a><a href="/admin/stats"><div class="Menu">Статистика</div></a><a href="/admin/query/logout/1"><div class="Menu">Выход</div></a></div>';
+echo '<div class="MenuHead"><a href="/admin"><div class="Menu">Главная</div></a><a href="/admin/query/logout/1"><div class="Menu">Выход</div></a></div>';
 }
 
 
@@ -375,6 +371,20 @@ echo '<div class="MenuHead"><a href="/"><div class="Menu">Главная</div></
 }
 
 function Footer () {
-echo '<footer class="footer"><a href="https://www.youtube.com/channel/UCpEWlcj5rkU1H9vkIf9Lb5g" target="blank">Мой канал на YouTube</a> | <a href="http://vk.com/php.youtube" target="blank">Моя группа ВК</a> - Пишем свой движок на PHP | Сайт размещен на хостинге <a href="http://bit.ly/1udgNg0" target="blank">Time Web</a> ( <a href="https://www.youtube.com/watch?v=nCoD_3Ecfv4" target="blank">Обзор Хостинга</a> ) - Рекомендую!</footer>';
+echo '<footer class="footer">
+<div class="footer__menu">
+<div class="footer__item">
+<a href="/">Главная</a>
+<a href="/">О компании</a>
+<a href="/">Новости</a>
+<p class="footer__conf">© 2018 год. Все права защищены. Отправляя данные с формы вы соглашаетесь на обработку Ваших персональных данных.</p>
+</div>
+<div class="footer__item">
+<a href="/">Отзывы</a>
+<a href="/">Вход</a>
+<a href="/">Контакты</a>
+</div>
+</div>
+</footer>';
 }
 ?>

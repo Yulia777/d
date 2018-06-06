@@ -53,7 +53,7 @@ if(isset($_POST['submit'])) {
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
 
 <head>
-	<title>Демо</title>
+	<title>Оставить заявку</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<meta http-equiv="Content-Style-Type" content="text/css" />
 
@@ -71,10 +71,12 @@ body {
 	font-family:Arial, Tahoma, sans-serif;
 }
 #contact-wrapper {
-	width:430px;
-	border:1px solid #e2e2e2;
-	background:#f1f1f1;
-	padding:20px;
+	width: 430px;
+	border: 1px solid #e2e2e2;
+	background: #f1f1f1;
+	padding: 20px;
+	margin: auto;
+	text-align: center;
 }
 #contact-wrapper div {
 	clear:both;
@@ -102,17 +104,33 @@ form#contactform textarea {
 	border-style:solid;
 	border-width:1px;
 }
+	.h2 {
+		text-align: center;
+		padding: 20px;
+		font-size: 22px;
+		line-height: 1.5;
+	}
 </style>
 </head>
 
 <?php Head('Пишем свой движок на PHP') ?>
 <body>
 <div class="wrapper">
-	<div class="header"></div>
+	<div class="header">
+		<div>
+			<a class="header__btn" href="/contact/">Оставить заявку</a>
+			<p>
+				8 (800) 000 00 00
+			</p>
+		</div>
+	</div>
 	<div class="content">
 		<?php Menu();
 		MessageShow()
 		?>
+<h2 class="h2">
+	Вы можете оставить свою заявку на сотрудничество и наши менеджеры свяжутся с вами в ближайшее время
+</h2>
 	<div id="contact-wrapper">
 
 	<?php if(isset($hasError)) { //Если найдены ошибки ?>
@@ -144,7 +162,7 @@ form#contactform textarea {
 			<label for="message"><strong>Сообщение:</strong></label>
 			<textarea rows="5" cols="50" name="message" id="message" class="required"></textarea>
 		</div>
-	    <input type="submit" value="Send Message" name="submit" />
+	    <input type="submit" value="Отправить" name="submit" />
 	</form>
 	</div>
 

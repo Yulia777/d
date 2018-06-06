@@ -1,30 +1,84 @@
 * {margin: 0; padding: 0 }
-body {font: 12px/18px Arial, sans-serif; width: 100%; background: url(/resource/img/bg.jpg) top center no-repeat; background-size:cover; -moz-background-size:cover; -webkit-background-size:cover}
+body {
+    font: 12px/18px Arial, sans-serif;
+    background-size:cover;
+    -moz-background-size:cover;
+    -webkit-background-size:cover;
+    background: linear-gradient(45deg, rgba(8,41,88,.9), #C5DDE8);
+}
 a {color: #fff; font-weight: bold; text-decoration:none}
 input[type=text], input[type=password], input[type=email], input[type=url] {height: 15px; width: 200px; padding: 5px; margin-bottom: 5px}
-input[type=submit], input[type=reset], .button {color: #fff; background: #D44B38; padding: 8px; border: 1px solid #A83B2D; font-weight: normal; text-align:center} 
-input[type=submit]:hover, input[type=reset]:hover, .button:hover  { background: #E85F4C}
+input[type=submit], input[type=reset], .button {color: #fff; background: #3fd776; padding: 8px; border: 1px solid #01aa58; font-weight: normal; text-align:center;
+    cursor: pointer;}
+input[type=submit]:hover, input[type=reset]:hover, .button:hover  { background: #3fd776}
 select {height:30px; margin-bottom: 5px;}
 
 textarea {resize: none}
 
 .wrapper {width: 1000px; margin: 0 auto}
-.header {width: 1000px; height: 150px; background: url(/resource/img/logo.png)}
+.header {
+    width: 1000px;
+    height: 60px;
+    background: url(/resource/img/saleslogowhite.svg)no-repeat;
+    background-size: 20%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.header p {
+    font-size: 22px;
+    color: rgba(8, 41, 88, .7);
+    font-weight: bold;
+    margin-top: 5px;
+    text-align: right;
+}
+.header__btn {
+    background: #3fd776;
+    border: 1px solid #3fd776;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(78, 109, 154);
+    display: block;
+    border-radius: 2px;
+}
+.header__btn:hover {
+    background: #01aa58;
+    border: 1px solid #01aa58;
+    cursor: pointer;
+    color: #fff;
+}
 .content {width: 1000px; min-height: 550px; background: #fff}
 
-.MenuHead {width: 1000px; height: 60px; background: #35886E}
-.Menu {float:left; display: inline-block;  height: 20px; background: #35886E; padding: 20px; color: #fff; font-size: 20px}
+.MenuHead {width: 1000px; height: 60px; background: rgba(8, 41, 88, .7)}
+.Menu {float:left; display: inline-block;  height: 20px; background: transparent; padding: 20px; color: #fff; font-size: 20px}
 .SwchItemCurt, .SwchItem:hover , .Menu:hover, .Cat:hover {opacity: 0.5; cursor: pointer}
 
-.CatHead {width: 1000px; height: 40px; background: #A83B2D}
-.Cat {float:left; display: inline-block;  height: 10px; background: #A83B2D; padding: 10px; color: #fff; font-size: 10px}
+.CatHead {width: 1000px; height: 40px; background: #3fd776}
+.Cat {float:left; display: inline-block;  height: 10px; background: #3fd776; padding: 10px; color: #fff; font-size: 10px}
 .CatHead form {float: right}
 .CatHead input[type=text], .CatHead input[type=submit] {border: none; outline: none}
-.CatHead input[type=text] {height: 30px; background: #A83B2D; color: #FFF}
+.CatHead input[type=text] {height: 30px; background: #3fd776; color: #FFF}
 .CatHead input[type=submit] {height: 40px}
 .Page {padding: 20px}
 
-.footer {height: 10px; background: #35886E; padding: 20px; color: #fff}
+.footer {height: 80px; background: rgba(8, 41, 88, .7); padding: 20px; color: #fff;}
+.footer__menu {
+    display: flex;
+    flex-direction: row;
+}
+.footer__item {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+.footer__item a {
+    font-size: 14px;
+}
+.footer__conf {
+    margin-top: 15px;
+}
 .MessageBlock {border: 1px solid #A83B2D; background: #D44B38; padding: 10px; color: #fff}
 
 
@@ -42,7 +96,7 @@ textarea {resize: none}
 .ChatMessage {width: 300px; height: 40px; resize: none; padding: 5px}
 
 .PageSelector{margin: 10px}
-.SwchItem, .SwchItemCur {padding: 2px 15px; background: #D44B38}
+.SwchItem, .SwchItemCur {padding: 2px 15px; background: #3fd776}
 .SwchItemCur{background: #35886E}
 
 
@@ -62,4 +116,56 @@ th {background: #A83B2D}
 td a, td {color: #000}
 td {border-bottom:1px solid #f5f5f5}
 td, th{text-align:center;  padding: 15px 10px}
-.table_right th, .table_right td {text-align:left}  
+.table_right th, .table_right td {text-align:left}
+.Wallop {     max-width: 800px;
+    margin: auto; }
+
+.Wallop-list { margin: 15px 0; }
+
+.Wallop-item img { width: 100%; }
+.Wallop-buttonNext, .Wallop-buttonPrevious {
+    position: absolute;
+    top: 50%;
+    z-index: 4;
+    cursor: pointer;
+    background: url(/resource/img/sl-arrow.png) 0 0 no-repeat;
+    width: 31px;
+    height: 57px;
+    border: 0;
+    outline: 0;
+}
+.Wallop-buttonPrevious {
+    left: -50px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.Wallop-buttonNext {
+    right: -50px;
+}
+.articles-cool {
+    display: flex;
+    flex-flow: row wrap;
+}
+.article-cool__title {
+    color: #000;
+    text-align: center;
+    font-weight: 600;
+    margin: -10px 0 20px;
+}
+.articles-cool--h2 {
+    color: rgba(8, 41, 88, .7);
+    font-weight: bold;
+    font-size: 26px;
+    padding: 0 20px 20px;
+}
+.home-page--h1 {
+    color: rgba(8, 41, 88, .7);
+    font-weight: bold;
+    font-size: 23px;
+    padding: 20px 0;
+    text-align: center;
+}
+.home-page--h2 {
+    text-align: center;
+    font-size: 20px;
+}
