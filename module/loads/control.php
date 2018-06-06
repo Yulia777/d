@@ -10,10 +10,10 @@ mysqli_query($CONNECT, "DELETE FROM `comments` WHERE `material` = $Param[id] AND
 unlink('catalog/img/'.$Row['dimg'].'/'.$Param['id'].'.jpg');
 unlink('catalog/mini/'.$Row['dimg'].'/'.$Param['id'].'.jpg');
 if ($Row['dfile']) unlink('catalog/file/'.$Row['dfile'].'/'.$Param['id'].'.zip');
-MessageSend(3, 'Материал удален.', '/loads');
+MessageSend(3, 'Новость удалена.', '/loads');
 } else if ($Param['command'] == 'active') {
 mysqli_query($CONNECT, "UPDATE `loads` SET `active` = 1 WHERE `id` = $Param[id]");
-MessageSend(3, 'Материал активирован.', '/loads/material/id/'.$Param['id']);
+MessageSend(3, 'Новость активирована.', '/loads/material/id/'.$Param['id']);
 }
 
 

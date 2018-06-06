@@ -4,7 +4,7 @@ $Param['cat'] += 0;
 
 if ($Param['cat'] and $Param['cat'] <= 0 or $Param['cat'] > 3) MessageSend(1, 'Такой категории не существует.', '/news');
 
-Head('Каталог файлов');
+Head('Каталог новостей');
 ?>
 <body>
 <div class="wrapper">
@@ -22,10 +22,10 @@ MessageShow()
 ?>
 <div class="CatHead">
 <?php if ($_SESSION['USER_LOGIN_IN']) echo '<a href="/loads/add"><div class="Cat">Добавить файл</div></a>' ?>
-<a href="/loads"><div class="Cat">Все категории</div></a>
-<a href="/loads/main/cat/1"><div class="Cat">Категория 1</div></a>
-<a href="/loads/main/cat/2"><div class="Cat">Категория 2</div></a>
-<a href="/loads/main/cat/3"><div class="Cat">Категория 3</div></a>
+<a href="/loads"><div class="Cat">Все новости</div></a>
+<a href="/loads/main/cat/1"><div class="Cat">Поисковое продвижение</div></a>
+<a href="/loads/main/cat/2"><div class="Cat">Оптимизация сайта</div></a>
+<a href="/loads/main/cat/3"><div class="Cat">Новичкам</div></a>
 <?php SearchForm() ?>
 </div>
 

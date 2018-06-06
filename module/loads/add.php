@@ -58,8 +58,8 @@ MessageShow()
 ?>
 <div class="Page">
 <form method="POST" action="/loads/add" enctype="multipart/form-data">
-<input type="text" name="name" placeholder="Название материала" required>
-<br><select size="1" name="cat"><option value="1">Категория 1</option><option value="2">Категория 2</option><option value="3">Категория 3</option></select>
+<input type="text" name="name" placeholder="Название новости" required>
+<br><select size="1" name="cat"><option value="1">Поисковое продвижение</option><option value="2">Оптимизация сайта</option><option value="3">Новичкам</option></select>
 <br><input type="url" name="link" placeholder="Ссылка для скачивания">
 <br><br><input type="file" name="file"> (Файл)
 <br><br><input type="file" name="img" required> (Изображение)
