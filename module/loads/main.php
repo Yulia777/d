@@ -21,7 +21,7 @@ Head('Каталог новостей');
 MessageShow() 
 ?>
 <div class="CatHead">
-<?php if ($_SESSION['USER_LOGIN_IN']) echo '<a href="/loads/add"><div class="Cat">Добавить файл</div></a>' ?>
+<?php if ($_SESSION['USER_LOGIN_IN']) echo '<a href="/loads/add"><div class="Cat">Добавить новость</div></a>' ?>
 <a href="/loads"><div class="Cat">Все новости</div></a>
 <a href="/loads/main/cat/1"><div class="Cat">Поисковое продвижение</div></a>
 <a href="/loads/main/cat/2"><div class="Cat">Оптимизация сайта</div></a>

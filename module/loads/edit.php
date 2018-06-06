@@ -11,7 +11,7 @@ $_POST['cat'] += 0;
 if ($_FILES['file']['tmp_name']) move_uploaded_file($_FILES['file']['tmp_name'], 'catalog/file/'.$Row['dfile'].'/'.$Param['id'].'.zip');
 if ($_FILES['img']['tmp_name']) move_uploaded_file($_FILES['img']['tmp_name'], 'catalog/img/'.$Row['dimg'].'/'.$Param['id'].'.jpg');
 mysqli_query($CONNECT, "UPDATE `loads` SET `name` = '$_POST[name]', `cat` = $_POST[cat], `text` = '$_POST[text]' WHERE `id` = $Param[id]");
-MessageSend(2, 'Материал отредактирован.', '/loads/material/id/'.$Param['id']);
+MessageSend(2, 'Новость отредактирована.', '/loads/material/id/'.$Param['id']);
 }
 
 Head('Редактировать новость') ?>

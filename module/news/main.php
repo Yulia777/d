@@ -5,7 +5,7 @@ $Param['cat'] += 0;
 
 if ($Param['cat'] and $Param['cat'] <= 0 or $Param['cat'] > 3) MessageSend(1, 'Такой категории не существует.', '/news');
 
-Head('Новости');
+Head('О компании');
 ?>
 <body>
 <div class="wrapper">
