@@ -366,8 +366,8 @@ echo '<div class="MenuHead"><a href="/admin"><div class="Menu">Главная</d
 
 function Menu () {
 if ($_SESSION['USER_LOGIN_IN'] != 1) $Menu = '<a href="/register"><div class="Menu">Регистрация</div></a><a href="/login"><div class="Menu">Вход</div></a><a href="/restore"><div class="Menu">Восстановить пароль</div></a>';
-else $Menu = '<a href="/profile"><div class="Menu">Профиль</div></a> <a href="/chat"><div class="Menu">Чат</div></a><a href="/pm/send"><div class="Menu">ЛС</div></a>';
-echo '<div class="MenuHead"><a href="/"><div class="Menu">Главная</div></a><a href="/news"><div class="Menu">Новости</div></a><a href="/loads"><div class="Menu">Файлы</div></a><a href="/forum"><div class="Menu">Форум</div></a>'.$Menu.'</div>';
+else $Menu = '<a href="/profile"><div class="Menu">Профиль</div></a> <a href="/chat"><div class="Menu">Отзывы</div></a>';
+echo '<div class="MenuHead"><a href="/"><div class="Menu">Главная</div></a><a href="/news"><div class="Menu">О компании</div></a><a href="/loads"><div class="Menu">Новости</div></a>'.$Menu.'</div>';
 }
 
 function Footer () {

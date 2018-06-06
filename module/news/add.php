@@ -8,9 +8,9 @@ $_POST['name'] = FormChars($_POST['name']);
 $_POST['text'] = FormChars($_POST['text']);
 $_POST['cat'] += 0;
 mysqli_query($CONNECT, "INSERT INTO `news`  VALUES ('', '$_POST[name]', $_POST[cat], '$_SESSION[USER_LOGIN]', '$_POST[text]', NOW(), $Active, 0, '')");
-MessageSend(2, 'Новость добавлена', '/news');
+MessageSend(2, 'Страница добавлена', '/news');
 }
-Head('Добавить новость') ?>
+Head('Добавить страницу') ?>
 <body>
 <div class="wrapper">
 <div class="header"></div>
@@ -20,8 +20,8 @@ MessageShow()
 ?>
 <div class="Page">
 <form method="POST" action="/news/add">
-<input type="text" name="name" placeholder="Название новости" required>
-<br><select size="1" name="cat"><option value="1">Категория 1</option><option value="2">Категория 2</option><option value="3">Категория 3</option></select>
+<input type="text" name="name" placeholder="Название страницы" required>
+<br><select size="1" name="cat"><option value="1">О компании</option><option value="2">Услуги</option><option value="3">Контакты</option></select>
 <br><textarea class="Add" name="text" required></textarea>
 <br><input type="submit" name="enter" value="Добавить"> <input type="reset" value="Очистить">
 </form>

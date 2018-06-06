@@ -22,11 +22,11 @@ Head('Новости');
 MessageShow() 
 ?>
 <div class="CatHead">
-<?php if ($_SESSION['USER_LOGIN_IN']) echo '<a href="/news/add"><div class="Cat">Добавить новость</div></a>' ?>
-<a href="/news"><div class="Cat">Все категории</div></a>
-<a href="/news/main/cat/1"><div class="Cat">Категория 1</div></a>
-<a href="/news/main/cat/2"><div class="Cat">Категория 2</div></a>
-<a href="/news/main/cat/3"><div class="Cat">Категория 3</div></a>
+<?php if ($_SESSION['USER_LOGIN_IN']) echo '<a href="/news/add"><div class="Cat">Добавить страницу</div></a>' ?>
+<a href="/news"><div class="Cat">Вся информация</div></a>
+<a href="/news/main/cat/1"><div class="Cat">О компании</div></a>
+<a href="/news/main/cat/2"><div class="Cat">Услуги</div></a>
+<a href="/news/main/cat/3"><div class="Cat">Контакты</div></a>
 <?php SearchForm() ?>
 </div>
 
